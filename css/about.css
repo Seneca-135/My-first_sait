@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+.wrapper{
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(74,40,0,1) 100%);;
+    width: 100%; 
+    overflow-x: hidden;
+}
+
+.container{
+    width: 1400px;
+    margin: 0 auto;
+}
+
+
+/* header */
+
+header{
+    padding: 37px 0;
+}
+
+.logo,
+.footer_info h3{
+    /* размер */
+    font-size:29px ;
+    /* жирность */
+    font-weight: 800;
+}
+
+nav{
+    float: right;
+    width: 674px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content:space-between;
+    position: relative;
+    z-index: 2;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+header nav ul li a{
+    color:#fff;
+}
+
+header nav ul li.active::after {
+    content:'';
+    display: block;
+    width: 40px;
+    background: #DC7000;
+    height: 4px;
+    border-radius: 20px;
+    position: relative;
+    top:10px;
+    left:-15px;
+}
+
+header nav ul li:not(.active):not(.btn) a:hover{
+    border-bottom: 5px solid #DC7000 ;
+}
+
+.btn a{
+    background: #FA9021;
+    padding: 21px 65px;
+    border-radius: 6px;
+    /* скорость смены цвета */
+    transition: all 500ms ease;
+}
+/* наведение на кнопку */
+.btn a:hover{
+    background: #792605;
+}
+
+
+/* Контент под шапкой */
+
+.hero-about{
+    margin-bottom:257px; 
+    position: relative;
+    z-index: 1;
+}
+
+.hero-about_info{
+    width: 425px;
+    padding-top: 130px;
+}
+
+.hero-about_info h1{
+    font-size:30px;
+    font-weight: 700;
+    line-height: 180%;
+}
+
+.hero-about_info p{
+    padding-top: 25px;
+    font-size: 15px;
+    font-weight:400;
+    line-height: 208.5%;
+    margin-bottom: 57px;
+}
+
+.btn-about{
+    background: #FA8305;
+    width: 176px;
+    text-align: center;
+    padding: 9px 1px;
+    border-radius: 40px;
+    transition: all 500ms ease;
+}
+
+.btn-about a{
+    color: #fff;
+    padding-right: 18px;
+}
+
+.btn-about:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.img-info{   
+    position: absolute;
+    top: 0;
+    right: -250px;
+    z-index: 2;
+}
+
+
+/* Why work */
+
+.work{
+    margin-bottom:147px ;
+}
+
+.work h2{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom:63px;
+}
+
+.work_blocks{
+    display: flex;
+    justify-content: space-between;
+}
+
+.blocks_block{
+    padding: 64px 37px;
+    background: #1C140F;
+    width: 25%;
+    border-radius: 10px;
+}
+
+.blocks_block h3{
+    font-size:20px;
+    margin:16px 0 ;
+}
+
+.blocks_block span{
+    font-size: 13px;
+}
+
+.blocks_block .badge{
+    display: block;
+    width: 90px;
+    border-radius: 8px;
+    padding: 7px 24px;
+}
+
+.purple{
+    background: #560F67;
+}
+
+.brown{
+    background: #31190D;
+}
+
+.green{
+    background: #192A1D;
+}
+
+
+/* баннер с игрой */
+
+.fon{
+    background:#1C140F;
+}
+
+.banner-about{
+    padding-top: 113px;
+    display: flex;
+    justify-content:space-between;
+}
+
+.banner-about_info{
+    width: 536px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.banner-about_info p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 202%;
+}
+
+.banner-about_info h3{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 14px 0;
+    line-height: 157%;
+}
+
+
+/* Команда */
+
+.team{
+    margin-top: 148px;
+}
+
+.team h2{
+    font-size: 25px;
+    font-weight: 600 ;
+    display: block;
+    margin-bottom: 53px;
+}
+
+.team_icons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.team_icons_block{
+    background: #1C140F;
+    width: 295px;
+    text-align:center;
+    border-radius: 20px;
+    margin-bottom: 157px;
+}
+
+.team_icons_block img{
+    margin-top: 35px;
+    height: 123px;
+}
+
+.team_icons_block h3{
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.team_icons_block p{
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+/* почта */
+
+.email{
+    padding-bottom: 163px;
+}
+
+.email h3{
+    font-size: 30px;
+    font-weight:600 ;
+}
+
+.email_block{
+    background: #1C140F;
+    width: 96%;
+    border-radius: 10px;
+    padding: 40px 3%;
+    margin-top: 74px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.email_block_info h4{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.email_block_info p{
+    width: 542px;
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 0 ;
+}
+
+.email_block_pole input{
+    background: #fff;
+    border: 0;
+    border-radius: 8px;
+    padding: 14px 20px;
+    /* подсветка поля = выключенна */
+    outline: none;
+    width: 385px;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    position:relative;
+    right: -110px;
+    z-index: 1;
+    padding-right: 120px;
+}
+
+.email_block_pole input::placeholder{
+    color: #898989;
+}
+
+.email_block_pole button{
+    border: 0;
+    background: #FA9021;
+    padding: 8px 22px;
+    border-radius: 8px;
+    /* скорость смены цвета */
+    transition: all 500ms ease;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+.email_block_pole button:hover{
+    background: #792605;
+}
+
+
+
+
+
+
+
+
+
+/* футтер */
+
+footer{
+    background: #070707;
+    overflow-y: hidden;
+}
+
+.footer{
+    padding-top:73px ;
+    display: flex;
+    justify-content:space-between ;
+}
+
+.footer_info p{
+    width: 372px;
+    margin-top: 15px;
+}
+
+.footer_about h4,
+.footer_contact h4{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.footer_about ul{
+    list-style: none;
+    margin-top: 20px;
+}
+
+.footer_about ul li{
+    margin-top: 8px;
+    opacity: 0.8;
+}
+
+.footer_contact p{
+    width: 282px;
+    margin-top: 20px;
+}
+
+.footer_img{
+    position: relative;
+    top: 117px;
+}
+
+/* hr */
+
+footer hr{
+    margin-top: 53px;
+    border: 0;
+    height: 0.3px;
+    background:#ccc ;
+}
+
+.footer_p{
+    text-align: center;
+    padding: 30px 0;
+}

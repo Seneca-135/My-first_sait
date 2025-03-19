@@ -1,0 +1,300 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1025px;
+    }
+
+    .hero img {
+        left: 410px;
+    }
+
+    .project_work {
+        margin: 0 auto;
+    }
+
+    .email_block_pole input {
+        width: 170px;
+        padding-right: 120px;
+    }
+
+    .games .block:not(:last-of-type) {
+        margin-right: 15px;
+    }
+
+}
+
+@media (max-width: 1025px) {
+    .container {
+        max-width: 769px;
+    }
+
+    nav{
+        width: 624px;
+    }
+
+    .hero img, .fon--min {
+        display: none;
+    }
+    .hero--info{
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .banner h3{
+        text-align: center;
+        margin-bottom: 32px;
+    }
+    .banner p{
+        margin: 0 auto 46px auto;
+        text-align:center;
+    }
+
+    .email{
+        text-align: center;
+    }
+
+    .email_block{
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+    .email_block_info{
+        margin-bottom: 20px;
+    }
+
+    .email_block_pole{
+        margin: 0 auto 0 65px;
+    }
+    .email_block_pole input{
+        width: 200px;
+        padding-right: 140px;
+    }
+
+    .footer{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer_contact{
+        display: none;
+    }
+
+    .footer_img{
+        padding-top: 10px;
+        position: static;
+    }
+
+}
+
+@media (max-width: 769px) {
+    .container {
+        max-width: 481px;
+    }
+
+    .burger-btn{
+        display: block;
+    }
+
+    header nav ul li.active::after {
+        content:'';
+        display: none;
+        width: 40px;
+        background: #DC7000;
+        height: 4px;
+        border-radius: 20px;
+        position: relative;
+        top:10px;
+        left:-15px;
+    }
+
+    nav{
+        border-radius: 10px;
+        z-index: 2;
+        position: absolute;
+        right: 0;
+        top: -370px;
+        height: 370px;
+        width: 300px;
+        background: #FA9021;
+        visibility: hidden;
+        padding: 20px 0 0 0;
+        transition: transform .5s, visibility .2s;
+    }
+
+    nav ul{
+        display: block;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    header nav ul li a{
+        display: block;
+        padding: 20px;
+        color: black;
+    }
+
+    .btn {
+        position: relative;
+        z-index: 5;  
+        max-width:250px;
+        margin: 0 auto;
+    }
+
+    .btn a{
+        transition: background-color 0.5s, transform .5s;
+    }
+
+    header.open nav{
+        transform: translateY(100%);
+        visibility: visible;
+    }
+
+    .trending_info{
+        display: block;
+        text-align: center;
+    }
+
+    
+
+    .trending_info .see--all{
+        margin: 20px auto 0 auto;
+        max-width: 200px;
+    }
+
+    .games{
+        display: grid;
+        grid-template: auto auto / auto auto; 
+    }
+
+    .games_picture:last-of-type{
+        max-width: 211.5px;
+        max-height: 232.47px;
+    }
+    
+    .block{
+        margin-top: 30px;
+    }
+
+    .block span{
+        display: block;
+        margin: 0 15px 0 0 ;
+        text-align: center;
+    }
+
+    .menu__info__content{
+        text-align: center;
+        max-width: 220px;
+        margin: 30px 2%;
+    }
+
+    .menu__info__content p {
+        font-size: 12px;
+    }
+
+    .email_block_pole{
+        position: relative;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .email_block_pole button{
+        display: block;
+        margin: 20px auto 0 auto;
+        padding: 20px 40px;
+    }
+
+    .email_block_pole input{
+        position: static;
+        padding-right: 140px;
+    }
+
+}
+
+
+@media (max-width: 481px) {
+    .container {
+        max-width: 320px;
+    }
+
+    .trending{
+        text-align: center;
+    }
+    .games{
+        display: block;
+        text-align: center;
+    }
+    
+    .games .block:not(:last-of-type) {
+        margin-right: 0;
+    }
+
+    .menu__info{
+        display: grid;
+        grid-row-gap: 20px;
+        justify-items: center; 
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+    }
+
+    .menu__info__content{
+        padding: 0px;
+        width: 150px;
+    } 
+
+    .menu__info__content-icons{
+        min-width:65px;
+        min-height: 65px;
+    } 
+
+    #close{
+        display: none;
+    }
+
+    .project_picture {
+        flex-wrap: wrap;
+    }
+
+    .project_picture:not(:last-of-type){
+        padding-bottom: 0;
+    }
+    
+    .one {
+        margin-bottom: 20px;
+    }
+
+    .one:not(:last-of-type){
+        padding: 0;
+    }
+
+
+    .email_block_pole{
+        position: relative;
+        text-align: center;
+
+    }
+
+    .email_block_pole input{
+        padding: 10px;
+    }
+
+    /* Шрифты */
+
+    .hero--info h1{
+        font-size: 35px;
+    }
+
+    .big--text{
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        max-width: 100%;
+    }
+
+    body {
+        font-size: 12px;
+    }
+}
